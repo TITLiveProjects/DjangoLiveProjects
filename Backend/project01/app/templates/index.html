@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 03</title>
+</head>
+
+<body>
+    <center>
+        <h1 style="color: blue; font-family: Algerian;">Welcome Django</h1>
+    </center>
+
+    <hr style="border: 1px solid black;width: 500px;">
+
+    <p>Class : {{ subjects }}</p>
+    
+    <p id="id01"></p>
+
+    <p id="id02"></p>
+
+    <script>
+        document.getElementById('id01').innerHTML = 'Class : {{ subjects|join:", " }}';
+
+        document.getElementById('id02').innerHTML = 'Total : {{ total }}';
+    </script>
+</body>
+
+</html>
